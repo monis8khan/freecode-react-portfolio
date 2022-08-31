@@ -1,6 +1,5 @@
-.logo-container{
-    z-index: 0; 
-    width: 400px;
+.logo-container {
+    z-index: 0;
     height: 609px;
     position: absolute;
     top: 0;
@@ -9,8 +8,10 @@
     left: auto;
     margin: auto;
     opacity: 0;
-    
-    svg{
+    animation: rotate 1s 1s;
+    animation-fill-mode: forwards;
+
+    svg {
         width: 100%;
         height: auto;
         bottom: 0;
@@ -25,12 +26,25 @@
         left: 0;
         margin: auto;
         width: 100%;
-        opacity: 0;
         transform: rotateZ(30deg) !important;
         z-index: 1;
     }
-    .svg-container{
+
+    .svg-container {
         stroke: #ffd700;
         stroke-width: 10px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+        width: 1px;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        opacity: 1;
+        width: 400px;
     }
 }
