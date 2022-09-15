@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect, useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 
 const Contact = () => {
@@ -32,6 +33,8 @@ const Contact = () => {
         alert('FAILED...');
       });
   }
+
+  var position = [24.8607, 67.0011]
   return (
     <>
       <div className='container contact-page'>
@@ -66,7 +69,19 @@ const Contact = () => {
             </form>
           </div>
         </div>
-
+        <div className='info-map'>
+          Monis Khan <br /> Karachi <br /> Pakistan <span>monis8khan@gmail.com</span>
+        </div>
+        <div className="map-wrap">
+          <MapContainer center={position} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"> </TileLayer>
+            <Marker position={position}>
+              <Popup>
+                A pretty CSS3 popup. <br /> Easily customizable.
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
       </div>
       <Loader type='pacman' />
     </>
