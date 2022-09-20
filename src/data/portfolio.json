@@ -1,0 +1,35 @@
+{
+    "Portfolio" : [
+    
+        {
+          "id": 1,
+          "title": "React Portfolio",
+          "client": "Self",
+          "duration": "2 week",
+          "techStack": "React",
+          "description": "This is my first React website that went live, it is built on React with TailwindCSS ",
+          "cover": "/portfolio/reactPortfolio.png",
+          "url": "https://monis8khan.github.io/monis8khan"
+        },
+        {
+          "id": 2,
+          "title": "Angular Portfolio",
+          "client": "Self",
+          "duration": "1 week",
+          "techStack": "Angular",
+          "description": "This is my first Angular website that went live, it is built on Angular with Bootstrap ",
+          "cover": "/portfolio/angularPortfolio.png",
+          "url": "https://monis8khan.github.io/get_bootstrapped/get_bootstrapped/"
+        },
+        {
+          "id": 3,
+          "title": "Wix Portfolio",
+          "client": "Self",
+          "duration": "3 day",
+          "techStack": "Wix/Velo",
+          "description": "This is my portfolio which is built on wix.com. I made this portfolio within 2-3 days with complete designing and responsiveness.",
+          "cover": "/portfolio/wixPortfolio.png",
+          "url":"https://dev8egg.wixsite.com/portfolio"
+        }
+      ]
+}
